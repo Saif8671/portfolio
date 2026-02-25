@@ -1,21 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import { Shield, Brain, BarChart3, Code, Lock, Lightbulb } from 'lucide-react';
 
-interface SkillsProps {
-  darkMode: boolean;
-}
-
 interface SkillCategory {
   icon: React.ReactNode;
   title: string;
   skills: string[];
 }
 
-const Skills = ({ darkMode }: SkillsProps) => {
+const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    const sectionElement = sectionRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -25,13 +22,13 @@ const Skills = ({ darkMode }: SkillsProps) => {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (sectionElement) {
+      observer.observe(sectionElement);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
       }
     };
   }, []);

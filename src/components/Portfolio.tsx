@@ -1,9 +1,5 @@
 import { ExternalLink, Github, FolderGit2 } from 'lucide-react';
 
-interface PortfolioProps {
-  darkMode: boolean;
-}
-
 interface Project {
   title: string;
   description: string;
@@ -12,14 +8,14 @@ interface Project {
   category: string;
 }
 
-const Portfolio = ({ darkMode }: PortfolioProps) => {
+const Portfolio = () => {
   const projects: Project[] = [
     {
-      title: 'Hand-gesture Controller',
-      description: 'ML-based system for detecting network anomalies and suspicious behavior patterns',
+      title: 'AI hallucination detection',
+      description: 'AI-based system for detecting hallucination in text',
       technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'TensorFlow'],
-      githubUrl: 'https://github.com/Saif8671',
-      category: 'ML',
+      githubUrl: 'https://github.com/Saif8671/AI-HALUCINATION-VERIFIYER',
+      category: 'AI-ML',
     },
     {
       title: 'Keylogger Analysis Tool',
@@ -29,24 +25,24 @@ const Portfolio = ({ darkMode }: PortfolioProps) => {
       category: 'Security',
     },
     {
-      title: 'SIEM Dashboard',
-      description: 'Real-time threat monitoring and analytics dashboard',
-      technologies: ['Python', 'Flask', 'D3.js', 'PostgreSQL'],
+      title: 'JARVIS Advanced Local AI Assistant',
+      description: 'automated AI assistant',
+      technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'TensorFlow'],
       githubUrl: 'https://github.com/Saif8671',
-      category: 'Dashboard',
+      category: 'AI-ML',
     },
     {
       title: 'Vulnerability Scanner',
       description: 'Network vulnerability assessment with automated scanning',
       technologies: ['Python', 'Nmap', 'Security Testing'],
-      githubUrl: 'https://github.com/Saif8671',
+      githubUrl: 'https://github.com/Saif8671/vulnerability-scanner',
       category: 'Security',
     },
     {
-      title: 'Intrusion Detection Model',
-      description: 'Deep learning model for network intrusion detection',
+      title: 'OBJECT-DETECTION-MODEL',
+      description: 'object detection model using tensorflow',
       technologies: ['Python', 'Deep Learning', 'TensorFlow'],
-      githubUrl: 'https://github.com/Saif8671',
+      githubUrl: 'https://github.com/Saif8671/OBJECT-DETECTION-MODEL',
       category: 'ML',
     },
     {

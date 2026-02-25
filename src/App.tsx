@@ -8,21 +8,28 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 function App() {
-  const [darkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme === 'dark';
+    }
+    return true;
+  });
 
   useEffect(() => {
-    document.documentElement.classList.add('dark');
-  }, []);
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   return (
     <div className="min-h-screen bg-github-bg">
-      <Navigation darkMode={darkMode} />
-      <Hero darkMode={darkMode} />
+      <Navigation darkMode={darkMode} onToggleTheme={() => setDarkMode((prev) => !prev)} />
+      <Hero />
       <GitHubRepos />
-      <Skills darkMode={darkMode} />
-      <Portfolio darkMode={darkMode} />
-      <Experience darkMode={darkMode} />
-      <Contact darkMode={darkMode} />
+      <Skills />
+      <Portfolio />
+      <Experience />
+      <Contact />
     </div>
   );
 }

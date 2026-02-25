@@ -6,14 +6,14 @@ export default {
     extend: {
       colors: {
         github: {
-          bg: '#0d1117',
-          canvas: '#161b22',
-          border: '#30363d',
-          text: '#c9d1d9',
-          muted: '#8b949e',
-          accent: '#58a6ff',
-          success: '#3fb950',
-          danger: '#f85149',
+          bg: 'var(--github-bg)',
+          canvas: 'var(--github-canvas)',
+          border: 'var(--github-border)',
+          text: 'var(--github-text)',
+          muted: 'var(--github-muted)',
+          accent: 'var(--github-accent)',
+          success: 'var(--github-success)',
+          danger: 'var(--github-danger)',
         },
       },
       fontFamily: {

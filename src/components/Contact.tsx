@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { Mail, MapPin, Github, Linkedin, Send } from 'lucide-react';
 
-interface ContactProps {
-  darkMode: boolean;
-}
-
-const Contact = ({ darkMode }: ContactProps) => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

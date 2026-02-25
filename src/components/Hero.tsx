@@ -1,11 +1,7 @@
 import { MapPin, Link as LinkIcon, Users } from 'lucide-react';
 import profileImage from '../assets/profile.png';
 
-interface HeroProps {
-  darkMode: boolean;
-}
-
-const Hero = ({ darkMode }: HeroProps) => {
+const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {

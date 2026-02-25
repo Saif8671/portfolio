@@ -22,6 +22,39 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --github-bg: #f6f8fa;
+  --github-canvas: #ffffff;
+  --github-border: #d0d7de;
+  --github-text: #1f2328;
+  --github-muted: #59636e;
+  --github-accent: #0969da;
+  --github-success: #1a7f37;
+  --github-danger: #d1242f;
+}
+
+.dark {
+  --github-bg: #0d1117;
+  --github-canvas: #161b22;
+  --github-border: #30363d;
+  --github-text: #c9d1d9;
+  --github-muted: #8b949e;
+  --github-accent: #58a6ff;
+  --github-success: #3fb950;
+  --github-danger: #f85149;
+}
+
+body,
+section,
+nav,
+div,
+article,
+input,
+textarea,
+button {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
