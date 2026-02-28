@@ -11,7 +11,19 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    const emailSubject = formData.subject.trim() || 'Portfolio Inquiry';
+    const emailBody = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      '',
+      formData.message,
+    ].join('\n');
+
+    const mailtoUrl = `mailto:saifurrahman8671@gmail.com?subject=${encodeURIComponent(
+      emailSubject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    window.location.href = mailtoUrl;
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -34,6 +46,9 @@ const Contact = () => {
           </h2>
           <p className="text-github-muted">
             Let's connect and discuss opportunities
+          </p>
+          <p className="text-xs text-github-muted mt-2">
+            Sending opens your email app with a pre-filled draft to my Gmail.
           </p>
         </div>
 

@@ -2,13 +2,6 @@ import { MapPin, Link as LinkIcon, Users } from 'lucide-react';
 import profileImage from '../assets/profile.png';
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section
       id="home"
@@ -31,12 +24,12 @@ const Hero = () => {
               <h1 className="text-3xl md:text-4xl font-semibold text-github-text">
                 Saif Ur Rahman
               </h1>
-              <button
-                onClick={scrollToContact}
+              <a
+                href="mailto:saifurrahman8671@gmail.com?subject=Portfolio%20Inquiry"
                 className="px-4 py-1.5 text-sm font-medium bg-github-canvas border border-github-border rounded-md text-github-text hover:bg-github-border/50 transition-colors duration-200"
               >
-                Contact
-              </button>
+                Get In Touch
+              </a>
             </div>
 
             <p className="text-xl text-github-muted mb-4 font-mono">

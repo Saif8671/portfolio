@@ -32,6 +32,8 @@ const Navigation = ({ darkMode, onToggleTheme }: NavigationProps) => {
     { id: 'repositories', label: 'Repositories' },
     { id: 'skills', label: 'Skills' },
     { id: 'portfolio', label: 'Projects' },
+    { id: 'articles', label: 'Articles' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'experience', label: 'Education' },
     { id: 'contact', label: 'Contact' },
   ];

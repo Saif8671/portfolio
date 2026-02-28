@@ -5,6 +5,8 @@ import Skills from './components/Skills';
 import GitHubRepos from './components/GitHubRepos';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
+import Articles from './components/Articles';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
       <GitHubRepos />
       <Skills />
       <Portfolio />
+      <Articles />
+      <Certifications />
       <Experience />
       <Contact />
     </div>
