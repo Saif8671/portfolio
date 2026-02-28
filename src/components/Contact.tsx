@@ -219,7 +219,7 @@ const Contact = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-github-border text-center text-sm text-github-muted">
-          <p>&copy; 2025 Saif Ur Rahman. Built with passion for cybersecurity and continuous learning.</p>
+          <p>&copy; 2026 Saif Ur Rahman. Built with passion & continuous learning.</p>
         </div>
       </div>
     </section>
