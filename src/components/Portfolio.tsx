@@ -39,10 +39,10 @@ const Portfolio = () => {
       category: 'Security',
     },
     {
-      title: 'OBJECT-DETECTION-MODEL',
-      description: 'object detection model using tensorflow',
+      title: 'ATTENDENCE TRACKING SYSTEM',
+      description: 'replaces paper sheets and manual roll calls with a QR-based, role-aware platform that works for the entire institution',
       technologies: ['Python', 'Deep Learning', 'TensorFlow'],
-      githubUrl: 'https://github.com/Saif8671/OBJECT-DETECTION-MODEL',
+      githubUrl: 'https://github.com/Saif8671/attendance_tracker',
       category: 'ML',
     },
     {
