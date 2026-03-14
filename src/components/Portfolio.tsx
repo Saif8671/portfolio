@@ -46,11 +46,11 @@ const Portfolio = () => {
       category: 'ML',
     },
     {
-      title: 'Data Analysis Pipeline',
-      description: 'EDA and feature engineering for security datasets',
+      title: 'SOC Triage Agent',
+      description: 'surfacing critical threats and automating initial response actions while keeping humans in the loop for high-risk decisions.',
       technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib'],
-      githubUrl: 'https://github.com/Saif8671',
-      category: 'ML',
+      githubUrl: 'https://github.com/Saif8671/soc-agent',
+      category: 'CYBER',
     },
   ];
 
